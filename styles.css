@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    background: #111;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+main {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: red;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid red;
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.contact-btn:hover {
+    background: red;
+    color: white;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+footer .social-icons img {
+    width: 30px;
+    height: 30px;
+}
+/* Tata letak utama */
+.content {
+    display: flex;
+    align-items: center; /* Pusatkan secara vertikal */
+    justify-content: space-between; /* Jarak antara teks dan gambar */
+    max-width: 1200px; /* Batasi lebar kontainer */
+    margin: auto; /* Pusatkan di layar */
+    padding: 20px; /* Tambahkan ruang di sekitar kontainer */
+    gap: 50px; /* Tambahkan jarak antara teks dan gambar */
+}
+
+/* Gambar di sisi kanan */
+.image {
+    flex: 1; /* Gambar menempati ruang secara proporsional */
+    display: flex;
+    justify-content: flex-end; /* Letakkan gambar di sisi kanan */
+}
+
+.image img {
+    max-width: 320px; /* Ukuran gambar besar */
+    height: auto; /* Jaga proporsi gambar */
+    border-radius: 10px; /* Sudut melengkung */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Tambahkan bayangan */
+}
+
+/* Ikon Media Sosial */
+footer .social-icons {
+    display: flex;
+    justify-content: center; /* Letakkan ikon di tengah */
+    gap: 20px; /* Jarak antar ikon */
+    margin-top: 30px; /* Tambahkan jarak dari bagian atas */
+    flex-wrap: wrap; /* Pastikan ikon tidak melampaui kontainer */
+}
+
+footer .social-icons img {
+    width: 40px; /* Ukuran ikon */
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+footer .social-icons img:hover {
+    transform: scale(1.2); /* Efek zoom saat hover */
+}
+
+/* Responsif (Layar Kecil) */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column; /* Susun elemen secara vertikal */
+        align-items: center; /* Pusatkan semua elemen */
+        text-align: center; /* Pusatkan teks */
+        gap: 20px; /* Tambahkan jarak antar elemen */
+    }
+
+    .image img {
+        max-width: 80%; /* Sesuaikan ukuran gambar dengan layar kecil */
+        margin: auto; /* Pusatkan gambar */
+    }
+
+    footer .social-icons {
+        gap: 10px; /* Kurangi jarak antar ikon */
+    }
+}
